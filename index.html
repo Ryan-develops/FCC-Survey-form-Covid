@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-content">
+        <h1 id="title">Tattoo Survey</h1>
+        <p id="description">Tell us your opinions on tattoos</p>
+        <form id="survey-form">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <div class="form-rows">
+                    <div class="label"><label for="name" id="name-label">Name:</label></div>
+                    <input type="text" name="name" id="name" placeholder="Enter your name.." required>
+                </div>
+
+                <div class="form-rows">
+                    <div class="label"><label for="email" id="email-label">Email:</label></div>
+                    <input type="email" name="email" id="email" placeholder="Enter your email.." required>
+                </div>
+
+                <div class="form-rows">
+                    <div class="label"><label for="number" id="number-label">Age:</label></div>
+                    <input type="number" id="number" placeholder="Enter your age.." min="18" max="40">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Overall Thoughts</legend>
+                <div class="form-rows">
+                    <div class="questions"><label>Your opinion on tattoos:</label></div>
+                    <select id="dropdown" name="thoughts">
+                <option value="select" hidden="hidden">Select..</option>
+                <option value="love">I love them!</option>
+                <option value="okay">They're okay</option>
+                <option value="dont-care">I don't care about them</option>
+                <option value="stupid">They're pretty stupid</option>
+                <option value="hate">I hate them!</option>
+              </select>
+                </div>
+
+                <div class="form-rows">
+                    <label class="questions">Would you ever have a tattoo?</label>
+                    <div class="label">
+                        <input type="radio" name="radio" value="yes" id="radio">
+                        <label for="radio">Yes</label>
+                    </div>
+                    <div class="label">
+                        <input type="radio" name="radio" value="no">
+                        <label for="radio">No</label>
+                    </div>
+                    <div class="label">
+                        <input type="radio" name="radio" value="have-a-tattoo">
+                        <label for="radio">Already have a tattoo</label>
+                    </div>
+                </div>
+
+                <div class="form-rows">
+                    <div class="questions">
+                        <label>What's the importance of tattoos?</label>
+                        <p id="check-all">(Check all that apply)</p>
+                    </div>
+                    <div class="label">
+                        <input type="checkbox" id="option1" name="option1" value="expression">
+                        <label for="option1">Self expression & art</label>
+                    </div>
+                    <div class="label">
+                        <input type="checkbox" id="option2" name="option2" value="scars">
+                        <label for="option2">Covering scars/skin damage</label>
+                    </div>
+                    <div class="label">
+                        <input type="checkbox" id="option3" name="option3" value="self-esteem">
+                        <label for="option3">Boosting self esteem</label>
+                    </div>
+                    <div class="label">
+                        <input type="checkbox" id="option4" name="option4" value="society">
+                        <label for="option4">Influenced by others</label>
+                    </div>
+                    <div class="label">
+                        <input type="checkbox" id="option5" name="option5" value="society">
+                        <label for="option5">I think they look great</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="form-rows">
+                <label for="message">In your own words, tell us your thoughts</label>
+                <textarea id="message" name="message" placeholder="Let us know what you think here.." rows="8" cols="40" required></textarea>
+            </div>
+
+
+
+            <button type="submit" id="submit">Finish</button>
+
+
+        </form>
+    </div>
+</body>
+
+</html>
